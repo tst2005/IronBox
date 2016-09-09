@@ -24,7 +24,7 @@ local IronBox = require "IronBox"
 
 local box1 = IronBox.create("while true do end print(\"I don't finish :(\")")
 local box2 = IronBox.create("print('I cannot use the \"print\" function')", {}) -- create empty environment
-local box3 = IronBox.create("print('Ahhh now I can print! :)')") -- use the defualt environment (inludes print, pairs, etc.)
+local box3 = IronBox.create("print('Ahhh now I can print! :)')") -- use the default environment (inludes print, pairs, etc.)
 
 box1() -- or box1:resume() they are the same
 box2()
